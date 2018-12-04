@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Hamburger Menu</title>
+  <style>
+    .l-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+
+    .c-filter {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      height: 500px;
+    }
+
+    .c-total {
+      width: 100%;
+      height: 500px;
+      padding: 25px;
+    }
+
+    .c-filter__size,
+    .c-filter__stuffing,
+    .c-filter__topping {
+      height: 125px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+    .c-filter__button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="l-wrapper">
+    <div class="c-filter">
+
+      <div class="c-filter__size">
+        <h3>Choose hamburger size:</h3>
+        <label>
+          <input type="radio"
+                 name="hamburger-size"
+                 value="large">
+          Large
+        </label>
+
+        <label>
+          <input type="radio"
+                 name="hamburger-size"
+                 value="small">
+          Small
+        </label>
+      </div>
+
+      <div class="c-filter__stuffing">
+        <h3>Choose stuffing:</h3>
+        <label>
+          <input type="radio"
+                 name="hamburger-stuffing"
+                 value="cheese">
+          Cheese
+        </label>
+
+        <label>
+          <input type="radio"
+                 name="hamburger-stuffing"
+                 value="potato">
+          Potato
+        </label>
+
+        <label>
+          <input type="radio"
+                 name="hamburger-stuffing"
+                 value="salad">
+          Salad
+        </label>
+      </div>
+
+      <div class="c-filter__topping">
+        <h3>Choose topping:</h3>
+        <label>
+          <input type="checkbox"
+                 name="hamburger-topping"
+                 value="spice">
+          Spice
+        </label>
+        <label>
+          <input type="checkbox"
+                 name="hamburger-topping"
+                 value="mayo">
+          Mayo
+        </label>
+      </div>
+
+      <div class="c-filter__button">
+        <input id="btn-calculate"
+               type="button"
+               value="Calculate">
+      </div>
+    </div>
+
+    <div id="total"
+         class="c-total">
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="cloneObj.js"></script>
+</body>
+
+</html>
