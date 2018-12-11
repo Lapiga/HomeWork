@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Notes</title>
+  <style>
+    .l-wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 75%;
+      height: 100vh;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="l-wrapper">
+    <div class="c-main">
+      <h3>All notes</h3>
+      <ul class="c-main__list"></ul>
+    </div>
+
+    <div class="c-favorite">
+      <h3>Favorite notes</h3>
+      <ul class="c-favorite__list"></ul>
+    </div>
+  </div>
+
+  <script src="js/notes/notes.view.js"></script>
+  <script src="js/notes/notes.model.js"></script>
+  <script src="js/notes/notes.controller.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
