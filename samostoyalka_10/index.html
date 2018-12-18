@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Product</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .l-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 800px;
+      height: 100%;
+    }
+
+    .c-product-slider {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 600px;
+    }
+
+    .c-product-slider__container {
+      height: 100%;
+      width: 60%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .c-product-slider__controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 150px;
+    }
+
+    .c-product-slider__control {
+      margin: 10px 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #bbb;
+      cursor: pointer;
+    }
+
+    .c-product-slider__control--isActive {
+      border: 2px solid brown;
+    }
+
+    .c-product-btn {
+      align-self: flex-end;
+      width: 100px;
+      height: 30px;
+    }
+
+    .c-product-description {
+      width: 100%;
+      height: 200px;
+    }
+
+    .c-product-description__text {
+      display: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="l-container">
+    <div class="c-product-slider">
+      <div class="c-product-slider__container"></div>
+      <div class="c-product-slider__controls"></div>
+      <button class="c-product-btn">More</button>
+    </div>
+    <div class="c-product-description">
+      <div id="descr_black"
+           class="c-product-description__text">
+        <p>
+          BLACK: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempore provident,
+          reprehenderit ducimus non adipisci eius natus, velit blanditiis laboriosam,
+          nisi omnis? Possimus, quibusdam dignissimos. Eveniet dolores iste error minus.
+        </p>
+      </div>
+      <div id="descr_gold"
+           class="c-product-description__text">
+        <p>
+          GOLD: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempore provident,
+          reprehenderit ducimus non adipisci eius natus, velit blanditiis laboriosam,
+          nisi omnis? Possimus, quibusdam dignissimos. Eveniet dolores iste error minus.
+        </p>
+      </div>
+      <div id="descr_silver"
+           class="c-product-description__text">
+        <p>
+          SILVER: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempore provident,
+          reprehenderit ducimus non adipisci eius natus, velit blanditiis laboriosam,
+          nisi omnis? Possimus, quibusdam dignissimos. Eveniet dolores iste error minus.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
