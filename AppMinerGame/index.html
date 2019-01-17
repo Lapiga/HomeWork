@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>MinerGame</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .l-container {
+      width: 100%;
+      height: 520px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .l-game-place {
+      width: 800px;
+      display: flex;
+      flex-direction: column;        
+    }
+
+    .c-header {
+      height: 75px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;   
+      border-bottom: 1px solid;
+      /*background-color: red;*/
+    }
+
+    .l-work-place {
+      height: 100%;
+      display: flex;    
+      justify-content: center;
+    /*  background-color: gold;*/
+    }
+
+    .c-footer {
+      width: 100%;
+      height: 50px;
+      padding: 0 10px 0 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;   
+      /*background-color: green;*/
+      border-top: 1px solid;
+    }
+
+    .c-field {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin: 0 auto;
+    }
+
+    .c-field__row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .c-field__cell {
+      height: 20px;
+      width: 20px;
+      border: 1px solid black;
+      text-align: center;
+      font-family: sans-serif;
+      background-color: darkgrey;
+    }
+
+    .c-field__cell--isOpend {
+      background-color: white;
+    }
+
+    .c-field__cell--isMine {
+      background-color: red;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="l-container">
+    <div class="l-game-place">
+      <div class="c-header">
+        <label>
+          Game field width
+          <input type="number"
+                 name="field-width"
+                 min="4"
+                 max="20"
+                 value="4">
+        </label>
+        <label>
+          Game field height
+          <input type="number"
+                 name="field-height"
+                 min="4"
+                 max="20"
+                 value="4">
+        </label>
+        <label>
+          Difficulty level
+          <input type="number"
+                 name="difficulty-level"
+                 min="1"
+                 max="5"
+                 value="1">
+        </label>
+
+        <button class="c-btn-start">Start game</button>
+      </div>
+
+      <div class="l-work-place">
+        <div class="c-field"></div>
+      </div>
+
+      <div class="c-footer">
+        <div class="c-mined-cell-count"></div>
+        <div class="c-opend-cell-count"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
